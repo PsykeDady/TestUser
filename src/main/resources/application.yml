@@ -1,0 +1,96 @@
+spring:
+  application:
+    name: test-coverage
+  
+  datasource:
+    url: jdbc:h2:mem:testdb
+    driverClassName: org.h2.Driver
+    username: sa
+    password:
+  
+  jpa:
+    database-platform: org.hibernate.dialect.H2Dialect
+    hibernate:
+      ddl-auto: create-drop
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+  
+  h2:
+    console:
+      enabled: true
+      path: /h2-console
+
+app:
+  database:
+    defaultUsers:
+      - username: mario_rossi
+        email: mario.rossi@example.com
+        password: password123
+        fullName: Mario Rossi
+        active: true
+        credits: 1500.00
+      
+      - username: luigi_bianchi
+        email: luigi.bianchi@example.com
+        password: password123
+        fullName: Luigi Bianchi
+        active: true
+        credits: 2000.00
+      
+      - username: anna_verdi
+        email: anna.verdi@example.com
+        password: password123
+        fullName: Anna Verdi
+        active: true
+        credits: 800.00
+      
+      - username: simone_neri
+        email: simone.neri@example.com
+        password: password123
+        fullName: Simone Neri
+        active: true
+        credits: 1200.00
+      
+      - username: sara_blu
+        email: sara.blu@example.com
+        password: password123
+        fullName: Sara Blu
+        active: true
+        credits: 3000.00
+      
+      - username: marco_gialli
+        email: marco.gialli@example.com
+        password: password123
+        fullName: Marco Gialli
+        active: true
+        credits: 1000.00
+      
+      - username: elena_rosa
+        email: elena.rosa@example.com
+        password: password123
+        fullName: Elena Rosa
+        active: true
+        credits: 2500.00
+      
+      - username: davide_viola
+        email: davide.viola@example.com
+        password: password123
+        fullName: Davide Viola
+        active: true
+        credits: 900.00
+      
+      - username: francesca_arancio
+        email: francesca.arancio@example.com
+        password: password123
+        fullName: Francesca Arancio
+        active: true
+        credits: 1800.00
+      
+      - username: antonio_marrone
+        email: antonio.marrone@example.com
+        password: password123
+        fullName: Antonio Marrone
+        active: true
+        credits: 2200.00
